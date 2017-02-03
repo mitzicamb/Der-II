@@ -4,5 +4,6 @@ Este repositorio tiene como objetivo coleccionar la implementación de los méto
 
 ## Tarea actual
  - Clonar el repositorio, escribir en el archivo "Alumnos" las iniciales de su nombre y hacer pull
+ 
 ## Tareas pendientes
  - Correr en el código de Black-Scholes.R la función de precio analítico y la de precio por simulación y comparar para distintos Strikes y maturities.
