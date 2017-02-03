@@ -1,0 +1,10 @@
+BlackScholes<-function(strike,spot,t,vol,rate,call_put){
+  moneyness<-spot/strike
+  d1<-(log(moneyness)+(rate+vol^2/2)*t)/(vol*sqrt(t))
+  d2<-d1-vol*sqrt(t)
+  Discount<-exp(-rate*t)
+  Forward<-exp(rate*t)*spot
+  premium<-call_put*(Forward*pnorm(call_put*d1)-strike*pnorm(call_put*d2))*Discount
+  return(d1)
+}
+BlackScholes(205,210.59,4/365,.1404,.002175,-1)
