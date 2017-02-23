@@ -4,7 +4,7 @@
 
 source("optimization.R")
 
-# prima de una opci\'on americana por Black-Scholes -----------------------
+# prima de una opci\'on europea por Black-Scholes -----------------------
 
 
 BlackScholes<-function(strike,spot,t,vol,rate,call_put){
@@ -21,7 +21,7 @@ BlackScholes<-function(strike,spot,t,vol,rate,call_put){
 
 
 
-# Prima de una opci\'on americana por Black-Scholes76 ---------------------
+# Prima de una opci\'on europea por Black-Scholes76 ---------------------
 
 
 BlackScholes76<-function(strike,forward,t,vol,rate,call_put){
@@ -37,7 +37,7 @@ BlackScholes76<-function(strike,forward,t,vol,rate,call_put){
 
 
 
-# Prima de una opci\'on americana por simulaci\'on -----------------------
+# Prima de una opci\'on europea por simulaci\'on -----------------------
 
 
 BlackScholes_mc<-function(strike,spot,t,vol,rate,call_put,n=1000){
